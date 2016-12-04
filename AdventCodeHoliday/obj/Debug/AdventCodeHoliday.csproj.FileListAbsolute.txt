@@ -1,0 +1,5 @@
+c:\users\vickydubs\documents\visual studio 2015\Projects\AdventCodeHoliday\AdventCodeHoliday\bin\Debug\AdventCodeHoliday.exe
+c:\users\vickydubs\documents\visual studio 2015\Projects\AdventCodeHoliday\AdventCodeHoliday\bin\Debug\AdventCodeHoliday.pdb
+c:\users\vickydubs\documents\visual studio 2015\Projects\AdventCodeHoliday\AdventCodeHoliday\obj\Debug\AdventCodeHoliday.csprojResolveAssemblyReference.cache
+c:\users\vickydubs\documents\visual studio 2015\Projects\AdventCodeHoliday\AdventCodeHoliday\obj\Debug\AdventCodeHoliday.exe
+c:\users\vickydubs\documents\visual studio 2015\Projects\AdventCodeHoliday\AdventCodeHoliday\obj\Debug\AdventCodeHoliday.pdb
