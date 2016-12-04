@@ -7,11 +7,11 @@ using System.Text;
 
 
 
-enum Heading { North = 1, East = 2, South = 3, West = 4 };
+public enum Heading { North = 1, East = 2, South = 3, West = 4 };
 enum LeftOrRight { Left = -1, Right = 1 };
 
 
-namespace ConsoleApplication1
+namespace AdventDayOne
 {
     class Program
     {
@@ -40,12 +40,14 @@ namespace ConsoleApplication1
         {
             string filePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"InputData.txt");
             string TotalListOfDirections = File.ReadAllText(filePath);
+            //string TotalListOfDirections = "R8, R4, R4, R8";
             return TotalListOfDirections.Split(new string[] { ", " }, StringSplitOptions.None);
         }
 
 
         static void Main(string[] args)
         {
+
             //Open and get turn file into a string
             string[] ListOfDirections = GetListOfDirections();
 
@@ -93,6 +95,7 @@ namespace ConsoleApplication1
                 if (NewHeading == Heading.North)//positive y direction
                 {
                     yCoord += DistanceInSteps;
+
                 }
                 else if (NewHeading == Heading.South)
                 { //negative y direction
@@ -117,15 +120,18 @@ namespace ConsoleApplication1
                     //error
                 }
 
-
+                bool IsRepeatValue = AdventDayOnePt2.IsThereARepeatValue(NewHeading, DistanceInSteps);
 
                 OldHeading = NewHeading;
 
             }
 
             int TotalValue = Math.Abs(xCoord) + Math.Abs(yCoord);
-            Console.WriteLine("{0}", TotalValue);
+            int CrossOverTotal = Math.Abs(AdventDayOnePt2.CrossOverPosition[0]) + Math.Abs(AdventDayOnePt2.CrossOverPosition[1]);
+            Console.WriteLine("{0}   {1}", TotalValue, CrossOverTotal);
         }
+
+
     }
 }
 
