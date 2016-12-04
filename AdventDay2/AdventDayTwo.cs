@@ -84,6 +84,7 @@ namespace AdventDay2
             //receive the entire text file and put it into this array of strings
             string[] ListOfInstructions = GetListOfDirections();
             int[] KeypadEntry = new int[ListOfInstructions.Length];
+            string keypadEntryStringPtTwo = "";
             //loop for each numberpad entry, split by newline character in text file
             for (int i = 0; i < ListOfInstructions.Length; i++)
             {
@@ -91,15 +92,25 @@ namespace AdventDay2
                 foreach (char Direction in ListOfInstructions[i])
                 {
                     UpdateCurrentPosition(Direction);
+                    AdventDayTwoPt2.UpdateCurrentPositionPtTwo(Direction);
                 }
                 KeypadEntry[i] = GetNextNumber();
+                keypadEntryStringPtTwo += AdventDayTwoPt2.GetKeyNumberPt2();
            }
             string keypadEntryString = "";
+
+
             foreach (int entry in KeypadEntry)
             {
                 keypadEntryString += entry;
+
             }
+
+
+
             Console.WriteLine("{0}", keypadEntryString);
+            Console.WriteLine(Environment.NewLine);
+            Console.WriteLine("{0}", keypadEntryStringPtTwo);
         }
     }
 }
