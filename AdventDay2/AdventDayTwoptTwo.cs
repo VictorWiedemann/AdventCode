@@ -15,6 +15,9 @@ namespace AdventDay2
             return hexValue;
         }
 
+
+        //Tried to use the same structure as part 1. Relized that it wasn't as smooth as I wanted. If I started over again, I would
+        //Do this quite differently.
         public static void UpdateCurrentPositionPtTwo(char Direction)
         {
             switch (Direction)

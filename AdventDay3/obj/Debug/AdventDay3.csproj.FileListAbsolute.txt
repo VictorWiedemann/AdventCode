@@ -1,0 +1,5 @@
+C:\Users\vickyDubs\Documents\Visual Studio 2015\Projects\AdventCodeHoliday\AdventDay3\bin\Debug\AdventDay3.exe
+C:\Users\vickyDubs\Documents\Visual Studio 2015\Projects\AdventCodeHoliday\AdventDay3\bin\Debug\AdventDay3.pdb
+C:\Users\vickyDubs\Documents\Visual Studio 2015\Projects\AdventCodeHoliday\AdventDay3\obj\Debug\AdventDay3.exe
+C:\Users\vickyDubs\Documents\Visual Studio 2015\Projects\AdventCodeHoliday\AdventDay3\obj\Debug\AdventDay3.pdb
+C:\Users\vickyDubs\Documents\Visual Studio 2015\Projects\AdventCodeHoliday\AdventDay3\obj\Debug\AdventDay3.csprojResolveAssemblyReference.cache
